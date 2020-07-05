@@ -43,7 +43,7 @@ PPPLib采用Cmake进行工程管理，目前软件仅支持在linux下的编译�
     具体配置信息可以查看用户文档([Your Path]/PPPLib/doc/PPPLib用户手册) 
 一组示例数据上传至百度云，扫码下载后放至项目根目录下即可
 
-[<div align=center>![U9KKHO.th.jpg](https://s1.ax1x.com/2020/07/05/U9KKHO.th.jpg)](https://imgchr.com/i/U9KKHO)
+[![U9KKHO.th.jpg](https://s1.ax1x.com/2020/07/05/U9KKHO.th.jpg)](https://imgchr.com/i/U9KKHO)
 
 ## 3. 待完善
 总结了目前PPPLib有待改进的点，个人能力有限，如果有好的建议可以直接联系本人，一起完善PPPLib。 
@@ -120,7 +120,7 @@ For more specific configuration information, please refer to PPPLib user manual.
 
 Upload a set of sample data to Baidu Cloud, please scan the code to download. Then place the example folder in the root directory
 
-[<div align=center>![U9KKHO.th.jpg](https://s1.ax1x.com/2020/07/05/U9KKHO.th.jpg)](https://imgchr.com/i/U9KKHO)
+[![U9KKHO.th.jpg](https://s1.ax1x.com/2020/07/05/U9KKHO.th.jpg)](https://imgchr.com/i/U9KKHO)
 
 
 ## 3. To be improved
