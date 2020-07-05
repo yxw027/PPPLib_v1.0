@@ -1,0 +1,16 @@
+PROJECT(GNSSLib)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+CMAKE_POLICY(SET CMP0015 NEW)
+
+add_subdirectory(${PROJECT_SOURCE_DIR}/EphModel)
+add_subdirectory(${PROJECT_SOURCE_DIR}/TrpModel)
+add_subdirectory(${PROJECT_SOURCE_DIR}/IonModel)
+add_subdirectory(${PROJECT_SOURCE_DIR}/BiaModel)
+add_subdirectory(${PROJECT_SOURCE_DIR}/AntModel)
+add_subdirectory(${PROJECT_SOURCE_DIR}/AmbModel)
+add_subdirectory(${PROJECT_SOURCE_DIR}/TidModel)
+add_subdirectory(${PROJECT_SOURCE_DIR}/AttModel)
+
+file(GLOB SRC_FILES "*.cc")
+add_library(GNSSLib ${SRC_FILES})
+target_link_libraries(GNSSLib EphLib TrpLib IonLib BiaLib AntLib TidLib AttLib)

@@ -1,0 +1,17 @@
+PROJECT(CoreLib)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+CMAKE_POLICY(SET CMP0015 NEW)
+
+add_subdirectory(${PROJECT_SOURCE_DIR}/Logger)
+add_subdirectory(${PROJECT_SOURCE_DIR}/Config)
+add_subdirectory(${PROJECT_SOURCE_DIR}/CmnFunc)
+add_subdirectory(${PROJECT_SOURCE_DIR}/ParSetting)
+add_subdirectory(${PROJECT_SOURCE_DIR}/ReadFiles)
+add_subdirectory(${PROJECT_SOURCE_DIR}/Solver)
+add_subdirectory(${PROJECT_SOURCE_DIR}/AdjModel)
+add_subdirectory(${PROJECT_SOURCE_DIR}/QuaCtrl)
+add_subdirectory(${PROJECT_SOURCE_DIR}/OutSolution)
+
+file(GLOB SRC_FILES "*.cc")
+add_library(CoreLib ${SRC_FILES})
+target_link_libraries(CoreLib LogLib CfgLib CmnLib ParLib ReadLib GNSSLib AdjLib SolverLib QCLib OutLib)
